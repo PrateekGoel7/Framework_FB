@@ -11,16 +11,19 @@ import org.testng.annotations.Test;
 import pageObjects.LoginPageObject;
 import reuseableComponents.ResuseableAbstractMethods;
 import utilityPackage.ExcelUtility;
+import utilityPackage.ScreenshotUtility;
 
 public class BaseTest extends ReuseableTestComponents{
 
-	@Test(enabled= false)
-	public void tc01() throws IOException 
+	@Test(dataProvider ="excelData")
+	public void tc01(String username, String password) throws IOException 
 	{
-		lauchAndlogin();
+		lauchAndlogin(username, password);
+		ScreenshotUtility su = new ScreenshotUtility(driver);
+		su.takeScreenshot();
 	}	
 	
-	@Test(dataProvider= "excelData")
+	@Test(enabled = false)
 	public void tc02(String username, String password) 
 	{
 		System.out.println(username+" "+password);
@@ -30,7 +33,7 @@ public class BaseTest extends ReuseableTestComponents{
 	@DataProvider(name= "excelData")
 	public Object[][] getexceldata() throws IOException 
 	{
-		String filepath = "C:\\Users\\c\\OneDrive\\Desktop\\Selenium\\myexcel.xlsx";
+		String filepath = "C:\\Users\\c\\eclipse-workspace\\Intoduction\\src\\Introduction\\frameworkPOM\\excelFile\\myexcel.xlsx";
 		String sheetname = "mysheet";
 		
 		ExcelUtility eu = new ExcelUtility();

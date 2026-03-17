@@ -28,13 +28,13 @@ public class ReuseableTestComponents {
 		return driver;
 	}
 	
-	public void lauchAndlogin() throws IOException 
+	public void lauchAndlogin(String us, String ps) throws IOException 
 	{
 		initializeDriver();
 		
 		LoginPageObject lp = new LoginPageObject(driver);
 		lp.lauchfb();
-		lp.dologin("Vibhu@gmail.com", "Admin@123");
+		lp.dologin(us,ps);
 	}
 	
 

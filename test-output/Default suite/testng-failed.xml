@@ -5,7 +5,7 @@
     <classes>
       <class name="testSuite.BaseTest">
         <methods>
-          <include name="tc02"/>
+          <include name="tc01" invocation-numbers="2 3 4"/>
         </methods>
       </class> <!-- testSuite.BaseTest -->
     </classes>

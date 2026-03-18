@@ -28,11 +28,11 @@ public class ExcelUtility {
 		{
 			Row rw = sh.getRow(i);
 			
-			for(int j=0; j<colcount; j++) 
-			{
-				Cell cl = rw.getCell(j);
-				data[i-1][j] = cl.toString();
-			}
+				for(int j=0; j<colcount; j++) 
+				{
+					Cell cl = rw.getCell(j);
+					data[i-1][j] = cl.toString();
+				}
 		}
 		
 		wb.close();

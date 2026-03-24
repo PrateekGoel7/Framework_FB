@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-18T16:51:25 IST" name="Suite" finished-at="2026-03-18T16:51:29 IST" duration-ms="3360">
+  <suite started-at="2026-03-24T14:15:25 IST" name="Suite" finished-at="2026-03-24T14:15:30 IST" duration-ms="4872">
     <groups>
     </groups>
-    <test started-at="2026-03-18T16:51:25 IST" name="Test" finished-at="2026-03-18T16:51:29 IST" duration-ms="3360">
+    <test started-at="2026-03-24T14:15:25 IST" name="Test" finished-at="2026-03-24T14:15:30 IST" duration-ms="4872">
       <class name="testSuite.BaseTest">
-        <test-method signature="tc01(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BaseTest@1165b38]" started-at="2026-03-18T16:51:28 IST" name="tc01" data-provider="excelData" finished-at="2026-03-18T16:51:29 IST" duration-ms="73" status="FAIL">
+        <test-method signature="tc01(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BaseTest@1165b38]" started-at="2026-03-24T14:15:29 IST" name="tc01" data-provider="excelData" finished-at="2026-03-24T14:15:29 IST" duration-ms="119" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc01 -->
-        <test-method signature="tc02(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BaseTest@1165b38]" started-at="2026-03-18T16:51:29 IST" name="tc02" data-provider="excelData" finished-at="2026-03-18T16:51:29 IST" duration-ms="7" status="PASS">
+        <test-method signature="tc02(java.lang.String,java.lang.String)[pri:0, instance:testSuite.BaseTest@1165b38]" started-at="2026-03-24T14:15:30 IST" name="tc02" data-provider="excelData" finished-at="2026-03-24T14:15:30 IST" duration-ms="22" status="PASS">
           <params>
             <param index="0">
               <value>

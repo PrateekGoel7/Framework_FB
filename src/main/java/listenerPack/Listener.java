@@ -22,6 +22,7 @@ public class Listener implements ITestListener{
 	{
 		System.out.println("Test Failed");
 		System.out.println(result.getMethod().getMethodName());
+		System.out.println(result.getThrowable());
 	}
 
 }
